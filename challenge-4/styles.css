@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #1a1924;
+  font-family: 'Roboto', sans-serif;
+
+  color: #e1e1e6;
+}
+
+#app {
+  padding: 2.4rem 3.2rem;
+
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  margin: auto;
+
+  width: 100vw;
+  max-width: 880px;
+
+  height: 100vh;
+}
+
+#app header {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 2.6rem;
+}
+
+#app header img {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+}
+
+header .user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin-left: 1.6rem;
+
+  flex: 1;
+}
+
+header .user-info strong {
+  font-size: 1.6rem;
+}
+
+header .user-info span::before {
+  content: '';
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+
+  background: #00b37e;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+}
+
+header .user-info span {
+  font-size: 1.2rem;
+  color: #00b37e;
+}
+
+header i {
+  font-size: 2rem;
+}
+
+header i:hover {
+  cursor: pointer;
+  filter: brightness(0.8);
+}
+
+.wrapper .last-seen {
+  text-align: center;
+  font-size: 1.2rem;
+
+  margin-top: 2.6rem;
+}
+
+.wrapper .messages {
+  margin-top: 3rem;
+  display: grid;
+  gap: 3rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+
+  padding-bottom: 2.4rem;
+}
+
+.wrapper .messages .message {
+  width: fit-content;
+  max-width: 60vw;
+
+  margin-bottom: 3rem;
+}
+
+.wrapper .message .details {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.wrapper .message .text {
+  width: fit-content;
+  padding: 1.4rem;
+
+  border-radius: 0.8rem 0.8rem 0 0.8rem;
+  background-color: #07847e;
+}
+
+.wrapper .message:not(.you) {
+  width: 40vw;
+}
+
+.wrapper .message:not(.you) .text {
+  background-color: #633bbc;
+  border-radius: 0 0.8rem 0.8rem 0.8rem;
+}
+
+.message.you {
+  margin-left: auto;
+}
+
+#app form {
+  display: flex;
+  align-items: center;
+  background: #282843;
+  border-radius: 999rem;
+  padding: 1.4rem 2.4rem;
+}
+
+input {
+  flex: 1;
+  outline: none;
+  color: #e1e1e6;
+  background: transparent;
+  border: none;
+}
+
+form:focus-within {
+  outline: 2px solid white;
+}
+
+input::placeholder {
+  color: #e1e1e6;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+button i {
+  color: #e1e1e6;
+  font-size: 2.4rem;
+}
+
+button i:hover {
+  cursor: pointer;
+  filter: brightness(0.8);
+}
+
+input,
+button {
+  background-color: transparent;
+  border: 0;
+}

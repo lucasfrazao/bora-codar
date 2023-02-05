@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <img
+          src="https://randomuser.me/api/portraits/women/9.jpg"
+          alt="User avatar"
+        />
+
+        <div class="user-info">
+          <strong>Marjorie Lambert</strong>
+          <span class="status">Online</span>
+        </div>
+
+        <i class="ph-x-fill" role="button"></i>
+      </header>
+
+      <div class="wrapper">
+        <div class="last-seen">Today 11:33</div>
+
+        <div class="messages">
+          <div class="message">
+            <div class="details">Marjorie Lambert - 11:30</div>
+            <div class="text">I have an idea for a new project! 😍</div>
+          </div>
+
+          <div class="message you">
+            <div class="details">You - 11:32</div>
+            <div class="text">Really? Tell me more about</div>
+          </div>
+
+          <div class="message">
+            <div class="details">Marjorie Lambert - 11:34</div>
+            <div class="text">
+              What if we make a modern and responsive chat?
+            </div>
+          </div>
+
+          <div class="message you">
+            <div class="details">You - 11:36</div>
+            <div class="text">#letsCode🚀</div>
+          </div>
+        </div>
+      </div>
+      <form>
+        <input type="text" placeholder="Type a message" />
+        <button type="submit">
+          <i class="ph-paper-plane-right-fill" role="button"></i>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
